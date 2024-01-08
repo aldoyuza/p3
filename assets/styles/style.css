@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+body {
+    background-color: #acdab9;
+    font-family: 'Raleway', sans-serif;
+}
+header {
+    background-color: #acdab9;
+    color: #0c0b0b;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+.konten-tengah {
+    text-align: center;
+}
+.konten-kiri {
+    text-align: center;
+}
+.konten-kanan {
+    text-align: center;
+}
+.img2 {
+    width: 100px;
+}
+nav {
+    background-color: #52a264;
+    overflow: hidden;
+    border-radius: 10px;
+}
+nav a {
+    float: left;
+    color: #141212;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #9b99ae;
+    color: #0c0b0b;
+}
+#content {
+    flex: 5;
+    display: flex;
+    padding-top: 20px;
+    flex-flow: column nowrap;
+}
+
+footer {
+    background-color: #6bc973;
+    color: #000000;
+    padding: 1px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    bottom: auto;
+    font-weight: bold;
+}
+
+.img1 {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.featured {
+    width: 100%;
+    max-height: 100%;
+    object-fit:contain;
+    object-position: left;
+    border-radius: 10px;
+}
+
+.backround {
+    background-color: #6bc973;
+    border-radius: 10px;
+}
+
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #52a264;
+    margin-bottom: 20px;
+    display:grid;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+    overflow: auto;
+    display:flex;
+    gap: 0.5rem;
+}
+
+.judul {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+.container {
+    display: flex; /* Membuat container menggunakan display: flex */
+    width: 100%;
+}
+
+.item {
+    margin: 40px; /* Memberi jarak antar item */ 
+    padding: 50px; /* Memberi ruang internal pada setiap item */
+    box-sizing:content-box;
+    border-radius: 10px;
+}
+/* Tampilan untuk layar dengan lebar antara 600px dan 900px */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    nav a {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .item {
+        margin: 20px;
+        padding: 40px;
+    }
+
+    .judul {
+        font-size: 22px;
+    }
+}
+
+/* Tampilan untuk layar dengan lebar lebih dari 900px */
+@media only screen and (min-width: 901px) {
+    nav a {
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .item {
+        margin: 10px;
+        padding: 50px;
+    }
+
+    .judul {
+        font-size: 24px;
+    }
+}
